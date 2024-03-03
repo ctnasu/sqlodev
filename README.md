@@ -19,15 +19,28 @@ WHERE rental_rate IN (0.99, 2.99, 4.99) ;
 AND replacement_cost IN (12.99, 15.99, 28.99);
 
 3. ödev
-1.SELECT country FROM country
+1.SELECT country FROM country;
 WHERE country LIKE 'A%a';
-2.SELECT country
-FROM country
+2.SELECT country;
+FROM country;
 WHERE LENGTH(country) >= 6 AND country LIKE '%n';
-3.SELECT title
-FROM film
+3.SELECT title;
+FROM film;
 WHERE title ILIKE '%T%T%T%T%';
 4.SELECT *
-FROM film
+FROM film;
 WHERE title LIKE 'C%' AND length > 90 AND rental_rate = 2.99;
+
+4.ödev
+1.SELECT DISTINCT replacement_cost;
+FROM film;
+2.SELECT COUNT(DISTINCT replacement_cost);
+FROM film;
+3.SELECT COUNT(*) ;
+FROM film;
+WHERE title LIKE 'T%' AND rating = 'G';
+4.SELECT COUNT(*) FROM country WHERE length = 5; 
+5.SELECT COUNT(*) FROM city;
+WHERE name ILIKE '%r';
+
 
